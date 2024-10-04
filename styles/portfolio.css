@@ -18,6 +18,13 @@
      background-color: white;
      color: #333;
  }
+
+ .container{
+    max-width: 1290px;
+    margin: 0 auto;
+ }
+
+
  
  a {
      text-decoration: none;
@@ -31,12 +38,13 @@
      list-style-type: none;
  }
  
-    } 
+     
  .header-image {
      width: 160px;
      height: auto;
      margin-bottom: 0;
-     position: relative;                                                                                             
+     position: relative;  
+     background-color: red;                                                                                           
  }
  
  .header h1 {
@@ -124,11 +132,13 @@
  
  .motivation-section {
      /* background-color: #ff5722; */
-     background-image: url('../images/watch.png');
+     background-image:linear-gradient(90.00deg, rgb(241, 91, 34),rgba(241, 91, 34, 0) 100%), url('../images/watch.png') ;
+     /* background-image: url('../images/banner/banner3.png'); */
      background-repeat: no-repeat;
      background-position: center;
+     background-size: cover;
      color: #fff;
-     text-align: center;
+     text-align: left;
      padding: 50px 20px;
      margin-bottom: 100px;
  }
@@ -137,7 +147,7 @@
      font-size: 1.8rem;
      margin-bottom: 20px;
      color: white;
-     text-align: center;
+     text-align: left;
  }
  
  .footer-content {
@@ -191,6 +201,40 @@
  
  .subscribe button:hover {
      background-color: #e64a19;
+ }
+
+
+ .headerSection{
+    min-height: 85vh;
+    background-image: url('/images/banner/banner1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+ }
+
+
+ .heroContent{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap:15px
+ }
+
+ .heroTitle{
+    font-size: 2.5vw;
+    padding: 10px 0;
+    width: 30%;
+    text-align: right;
+ }
+
+ .heroP{
+    width: 50%;
+    text-align: right;
  }
  
  /* Responsive */
